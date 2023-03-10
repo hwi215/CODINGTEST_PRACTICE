@@ -1,3 +1,5 @@
+from itertools import permutations
+"""
 N, M= map(int, input().split())
 number = list(map(int, input().split()))
 result = 0
@@ -11,3 +13,40 @@ for i in range(N):
            else:
                result = max(result, number[i]+number[j]+number[k])
 print(result)
+"""
+n, m = map(int, input().split())
+num = list(map(int, input().split()))
+
+result = list(permutations(num, 3)) # nC3
+
+a = 0
+answer = 0
+count = 0
+for a in result:
+    s = sum(a)
+    if s > int(m):
+        continue
+    else:
+        answer = max(s, answer)
+
+print(answer)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
