@@ -30,3 +30,4 @@ answer = 7
 print("정답은 " + str(answer) + "입니다.") # 정답은 7입니다.
 print("정답은", answer, "입니다.") # 정답은 7 입니다. - 띄어쓰기로 출력됨
 print(f"정답은 {answer}입니다.") # 정답은 7입니다. - f-string문법
+
