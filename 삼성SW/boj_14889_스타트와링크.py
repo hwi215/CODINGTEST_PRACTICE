@@ -10,6 +10,7 @@ for _ in range(n):
     graph.append(list(map(int, input().split())))
 
 visited = [False for _ in range(n)]
+
 result = int(1e9)
 
 def dfs(depth, index):
@@ -17,6 +18,7 @@ def dfs(depth, index):
 
     # 중단 조건
     if n//2 == depth:
+        #print(depth, index)
         sum1, sum2 = 0, 0
         for i in range(n):
             for j in range(i+1, n):
