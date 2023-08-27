@@ -26,4 +26,5 @@ def bfs(x, y):
     return graph[n-1][m-1] # 맨 오른쪽 아래까지의 최단거리 반환
 
 print(bfs(0,0)) # 시작지점
+print(graph)
 
