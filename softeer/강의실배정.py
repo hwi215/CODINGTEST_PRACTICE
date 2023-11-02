@@ -7,7 +7,7 @@ import heapq
 단, 두 강의의 시작시간과 종료시간은 겹쳐도 된다.
 
 [문제풀이]
-sort, lambda 정렬은 시간초가 남
+sort, lambda 정렬은 시간초과 남
 -> heapq 우선순위 큐 사용하기!(앞에 있는 것 기준으로 적은것부터 자동 정렬됨)  
 '''
 n = int(input())
