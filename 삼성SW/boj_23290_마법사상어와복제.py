@@ -24,6 +24,7 @@ def fish_move():
                     fish_graph2[x][y].append(d) # 이동할 수 없는 칸이 없으면 이동 X
     return fish_graph2
 
+# 상어 이동
 def shark_move(x, y, depth, count, visit):
     global max_eat, shark, eat
 

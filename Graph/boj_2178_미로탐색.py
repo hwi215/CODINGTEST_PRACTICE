@@ -1,7 +1,7 @@
-import sys
+#import sys
 from collections import deque
 
-def is_move(x, y): # 이동 가능한 범위인지 확인
+def is_move(x, y): # 이동 가능한 범위인지 확
     return x >= 0 and y >= 0 and x < n and y < m
 
 dx = [-1, 1, 0, 0]
@@ -23,13 +23,14 @@ def bfs(x, y):
 
     return graph[n-1][m-1]
 
-input = sys.stdin.readline
-
+#input = sys.stdin.readline
 n, m = map(int, input().split())
 graph = []
 
 for i in range(n):
     graph.append(list(map(int, input().strip()))) # strip으로 쪼개기
+
+#graph = [list(map(int, input())) for _ in range(n)]
 
 
 print(bfs(0, 0))
